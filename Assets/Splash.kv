@@ -1,0 +1,28 @@
+<SplashScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            id: splash_label
+            text: 'IVAVI'
+            halign: 'center'
+            valign: 'middle'
+            text_size: self.size
+            size_hint: (1, 1)
+            font_size: '48sp'
+            bold: True
+
+<MainScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        Camera:
+            id: camera
+            resolution: (640, 480)
+            play: True
+            size_hint: (1, 0.8)
+        Label:
+            text: 'Hello, World!'
+            font_size: '48sp'
+            halign: 'center'
+            valign: 'middle'
+            text_size: self.size
+            size_hint: (1, 0.2)
